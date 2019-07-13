@@ -35,7 +35,7 @@ class CartController extends Controller
             });
         }
         session()->save();
-        /** @var TYPE_NAME $cart */
+
         broadcast(new UserCart($cart));
     }
 }

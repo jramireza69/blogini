@@ -98,8 +98,12 @@
                cartData.data.map(product => {
                    this.products.push(product);
 
-                })
-            })
+                });
+            });
+
+            window.Echo.private(`cart-updated.${this.user_id}`).listen('UserCart', (e) => {
+                              console.log('pruebaa');
+            });
         }
     }
 </script>

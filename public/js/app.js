@@ -74109,6 +74109,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 _this.products.push(product);
             });
         });
+
+        window.Echo.private("cart-updated." + this.user_id).listen('UserCart', function (e) {
+            console.log('pruebaa');
+        });
     }
 });
 
