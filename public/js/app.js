@@ -74111,7 +74111,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         });
 
         window.Echo.private("cart-updated." + this.user_id).listen('UserCart', function (e) {
-            console.log('pruebaa');
+            console.log('cart update fired');
         });
     }
 });

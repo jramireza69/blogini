@@ -101,8 +101,10 @@
                 });
             });
 
+
+
             window.Echo.private(`cart-updated.${this.user_id}`).listen('UserCart', (e) => {
-                              console.log('pruebaa');
+              console.log('cart update fired');
             });
         }
     }
